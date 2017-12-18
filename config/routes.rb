@@ -1,4 +1,30 @@
 Rails.application.routes.draw do
+  resources :students, except: [:destroy, :index]
+  resources :school_classes, except: [:destory, :index]
+  # get '/students/new' => 'students#new'
+  #
+  # post '/students' => 'students#create'
+  #
+  # get '/students/:id' => 'students#show', as: 'student'
+  #
+  # get '/students/:id/edit' => 'students#edit'
+  #
+  # patch '/students/:id' => 'students#update'
+  #
+  #
+  #
+  # get '/school_classes/new' => 'school_classes#new'
+  #
+  # post '/school_classes' => 'school_classes#create'
+  #
+  # get '/school_classes/:id' => 'school_classes#show', as: 'school_class'
+  #
+  # get '/school_classes/:id/edit' => 'school_classes#edit'
+  #
+  # patch '/school_classes/:id' => 'school_classes#update'
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
