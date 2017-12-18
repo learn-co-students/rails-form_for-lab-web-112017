@@ -10,7 +10,7 @@ describe 'form page' do
   it 'new form submits content and renders form content' do
     visit new_student_path
 
-    fill_in 'student_first_name', with: "Lindsey"
+    fill_in 'student[first_name]', with: "Lindsey"
     fill_in 'student_last_name', with: "Stirling"
 
     click_on "Create Student"
