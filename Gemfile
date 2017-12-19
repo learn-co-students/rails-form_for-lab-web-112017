@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'did_you_mean', '~> 1.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+gem 'rake'
+
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -23,6 +27,11 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -32,4 +41,3 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
 end
-
