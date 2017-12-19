@@ -13,7 +13,8 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+  resources :school_classes, except: :destroy
+  resources :students, except: :destroy
   # Example resource route with options:
   #   resources :products do
   #     member do
